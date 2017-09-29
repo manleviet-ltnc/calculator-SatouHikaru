@@ -48,7 +48,7 @@
             this.btnPhanTram = new System.Windows.Forms.Button();
             this.btnCan = new System.Windows.Forms.Button();
             this.btnBang = new System.Windows.Forms.Button();
-            this.btnNho = new System.Windows.Forms.Button();
+            this.btnXoaNho = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -181,6 +181,7 @@
             this.btnThapPhan.TabIndex = 19;
             this.btnThapPhan.Text = ".";
             this.btnThapPhan.UseVisualStyleBackColor = true;
+            this.btnThapPhan.Click += new System.EventHandler(this.btnThapPhan_Click);
             // 
             // btnCong
             // 
@@ -252,14 +253,15 @@
             this.btnBang.UseVisualStyleBackColor = true;
             this.btnBang.Click += new System.EventHandler(this.btnBang_Click);
             // 
-            // btnNho
+            // btnXoaNho
             // 
-            this.btnNho.Location = new System.Drawing.Point(18, 54);
-            this.btnNho.Name = "btnNho";
-            this.btnNho.Size = new System.Drawing.Size(86, 40);
-            this.btnNho.TabIndex = 1;
-            this.btnNho.Text = "C";
-            this.btnNho.UseVisualStyleBackColor = true;
+            this.btnXoaNho.Location = new System.Drawing.Point(18, 54);
+            this.btnXoaNho.Name = "btnXoaNho";
+            this.btnXoaNho.Size = new System.Drawing.Size(86, 40);
+            this.btnXoaNho.TabIndex = 1;
+            this.btnXoaNho.Text = "C";
+            this.btnXoaNho.UseVisualStyleBackColor = true;
+            this.btnXoaNho.Click += new System.EventHandler(this.btnXoaNho_Click);
             // 
             // btnXoa
             // 
@@ -277,7 +279,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(260, 291);
             this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnNho);
+            this.Controls.Add(this.btnXoaNho);
             this.Controls.Add(this.btnBang);
             this.Controls.Add(this.btnCan);
             this.Controls.Add(this.btnPhanTram);
@@ -329,7 +331,7 @@
         private System.Windows.Forms.Button btnPhanTram;
         private System.Windows.Forms.Button btnCan;
         private System.Windows.Forms.Button btnBang;
-        private System.Windows.Forms.Button btnNho;
+        private System.Windows.Forms.Button btnXoaNho;
         private System.Windows.Forms.Button btnXoa;
     }
 }
